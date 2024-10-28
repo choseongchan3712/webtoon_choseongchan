@@ -7,6 +7,7 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faGrip } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const HeaderEl = styled.div`
   width: 100%;
@@ -35,6 +36,7 @@ const TopWrap = styled.div`
     display: flex;
     align-items: center;
     .logo {
+      text-decoration: none;
       font-size: 20px;
       color: black;
       font-weight: 900;
@@ -157,7 +159,7 @@ export const Header = () => {
       <HeaderTop>
         <TopWrap>
           <div className="topleft_wrap">
-            <div className="logo">NAVER</div>
+            <Link to="/" className="logo">NAVER</Link>
             <div className="title_wrap">
               <div className="title1">웹툰</div>
               <div className="title2">웹소설</div>

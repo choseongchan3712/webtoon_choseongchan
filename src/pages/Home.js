@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const webtoonInfo = [
   {
@@ -97,10 +98,12 @@ const HomeEl = styled.div`
     .content {
       width: calc(1160px / 5);
       .img_wrap {
+        display: block;
         width: 100%;
         height: auto;
         overflow: hidden;
         border-radius: 10px;
+        position: relative;
         cursor: pointer;
         img {
           width: 100%;
@@ -150,9 +153,9 @@ const Home = () => {
       <div className="contents_wrap">
         {webtoonInfo.map((info, index) => (
           <div className="content" key={index}>
-            <div className="img_wrap">
+            <Link to={`/webtoon/${info.id}`} className="img_wrap">
               <img src={info.img} alt="webtoon_img" />
-            </div>
+            </Link>
             <div className="name">{info.name}</div>
             <div className="author">{info.author}</div>
           </div>
