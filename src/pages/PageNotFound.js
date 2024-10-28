@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const PageNoteFoundEl = styled.div`
   width: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
   font-size: 100px;
   display: flex;
   flex-direction: column;
