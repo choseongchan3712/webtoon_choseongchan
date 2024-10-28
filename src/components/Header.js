@@ -152,6 +152,7 @@ const BottomWrap = styled.div`
     width: 100%;
     justify-content: space-around;
     div, .menu_home {
+      color: black;
       height: 100%;
       width: calc(100% / 5);
       display: flex;
