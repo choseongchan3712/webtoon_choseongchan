@@ -120,8 +120,12 @@ justify-content: space-between;
 }
 .text_wrap {
   width: 75%;
+  height: 50%;
   box-sizing: border-box;
   padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   .name {
     font-size: 20px;
     font-weight: 900;
@@ -155,9 +159,9 @@ justify-content: space-between;
     .tag {
       padding: 5px;
       margin-right: 5px;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: #00dc64;
       border-radius: 5px;
-      color: rgba(0, 0, 0, 0.5);
+      color: #fff;
       font-weight: 900;
       cursor: pointer;
     }
